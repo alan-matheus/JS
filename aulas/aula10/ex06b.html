@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações JS</title>
+    <style>
+
+        body{
+            font: normal 1em 'Arial';
+        }
+        
+        #res{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100px;
+            text-align: center;
+        }
+
+        #main{
+            margin: auto;
+            width: 450px;
+            border: 1px solid black;
+            box-shadow: 1px 1px black;
+            border-radius: 10px;
+        }
+
+        #calculo{
+            padding: 15px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="calculo">
+            <h1>Multiplicação</h1>
+
+            <input type="number" id="a"> * 
+            <input type="number" id="b">
+            <input type="button" value="multiplicar" onclick="multiplicar()">
+            <div id="res">resultado</div>
+        </div>
+        
+    </div>
+    
+
+    <script>
+
+        function multiplicar() {
+            var num1= window.document.getElementById("a")
+            var num2= window.document.getElementById("b")
+            var res = window.document.getElementById("res")
+
+            var a = Number(num1.value)
+            var b = Number(num2.value)  
+
+            var m = a * b
+
+            res.innerHTML = `O resultado da multiplicação entre ${a} e ${b} é de ${m} `
+        }
+        
+
+
+
+    </script>
+    
+</body>
+</html>
