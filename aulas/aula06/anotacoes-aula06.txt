@@ -1,0 +1,50 @@
+é preciso definir que são números as duas
+partes de uma soma, por exemplo,
+para que JS não "pense" que são concatenação
+mas sim uma operação de adição
+
+tudo que vem do prompt, vem como String
+
+portanto é preciso tratar aquilo que vem do prompt,
+"parsear"
+
+ex:
+
+var n1= Number.parseInt(window.prompt("digite um número: "))
+
+quando são números flutuantes, com vírgula:
+
+var n1= Number.parseFloat(...)
+
+para o JS decidir, independente se forem recebidos números
+flutuantes ou inteiros:
+
+var n1= Number(window.prompt("digite um número: "))
+
+também é possível optar por não precisar fazer a concatenação 
+usando o que se chama de tamplate string.
+Entre crases:
+
+por exemplo:
+
+window.alert(`a soma de ${n1} e ${n2} é ${soma}`)
+
+
+TAMANHO DA STRING
+
+se usa nomedavariavel.length para saber o tamanho da String;
+
+nomedavariavel.toUpperCase para deixar em maiúscula 
+nomedavariavel.toLowerCase para deixar em minúscula 
+
+TRANSFORMAR UM NÚMERO FLOAT EM 2 CASAS DECIMAIS DEPOIS DA VÍRGULA
+
+nomedavariavel.toFixed(2)
+
+TRANSFORMAR O PONTO PARA VÍRGULA
+
+nomedavriavel.toFixed(2).replace('.', ',')
+
+COLOCAR O SÍMBOLO DE REAIS ANTES DE UM SALÁRIO, POR EXEMPLO
+
+nomevariavel.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})

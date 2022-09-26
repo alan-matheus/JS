@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+</head>
+<body>
+    <h1>olá, mundo!</h1>
+
+    <script>
+        
+       var n1 = Number.parseInt(window.prompt("Digite um número: "));
+       var n2 = Number.parseInt(window.prompt("Digite outro número: "));
+       var soma = n1 + n2;
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma} `);
+
+       var n3= Number(window.prompt("Digite um número: "));
+       var n4= Number(window.prompt("Digite outro número: "));
+
+       var multiplicacao = n3 * n4;
+
+       multiplicacao.toFixed(2);
+
+       window.alert(`O resultado da multiplicação entre ${n3} e ${n4} foi de ${multiplicacao} `);
+
+       var n5= Number(window.prompt("Digite um número: "));
+       var n6= Number(window.prompt("Digite outro número: "));
+
+       var divisao = n5/n6;
+
+       divisao.toFixed(2);
+
+       window.alert(`O resultado da divisão entre ${n5} e ${n6} é de ${divisao} `)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+DOM - 
+
+acrônimo para Document Object Model.
+
+Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do web site.
+ou seja: funciona só no navegador, não no Node.JS, por exemplo.
+
+É preciso aprender a fazer uma árvore DOM.
+Começa da raíz, que dentro do navegador se chama window.
+Tudo dentro do JS está dentro do window.
+
+Dentro da window há outros objetos, quais são: location, document, history 
+
+location: localização do site, url, página atual, qual foi a página anterior;
+document: documento atual;
+history: vai guardando de onde se veio e pra onde se vai 
+
+dentro do DOCUMENT está o HTML.
+Dentro do HTML há duas partes: cabeçalho ou head e corpo ou body 
+Dentro do Head estão as tags meta, title e outras
+

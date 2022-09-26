@@ -1,0 +1,31 @@
+
+comentarios JS:
+// uma linha
+
+/*
+mais de
+uma 
+linha
+*/
+
+comentários só funcionam dentro do trecho JS, <script></script>
+
+
+tipos de dados:
+number, independente se for flutuante ou inteiro;
+string, letras;
+booleanos, true or false.
+
+outros datatypes JS:
+
+number: Infinity, NaN;
+string;
+boolean;
+null;
+undefined;
+object: array;
+function.
+
+os tipos das variáveis podem ir mudando,
+de acordo com as possíveis sobreescrições das mesmas
+

@@ -1,0 +1,52 @@
+operadores aritméticos JS:
+
++ adição;
+- subtração;
+* multiplicação;
+/ divisão;
+% resto;
+** potencia.
+
+é preciso ter cuidado com os erros sintáticos.
+Escrevemos uma expressão corretamente
+que pode resultar numa conta errada, e que
+tal expressão não será acusada pelo programa
+como se fosse um erro. 
+
+ORDEM DE PRECEDÊNCIA:
+
+1 - PARÊNTESES;
+2 - POTÊNCIA;
+3 - MULTIPLICAÇÃO, DIVISÃO E RESTO;
+4 - SOMA E SUBTRAÇÃO
+
+EM QUALQUER EXPRESSÃO, PRIMEIRO SÃO ANALISADOS OS
+PARÊNTESES, DEPOIS, SE HOUVEREM, AS POTÊNCIAS,
+LOGO O QUE VIER PRIMEIRO E SUCESSIVAMENTE 
+DA ESQUERDA PRA DIREITA ENTRE MULTIPLICAÇÃO,
+DIVISÃO E RESTO. POR FIM, A SOMA E A SUBTRAÇÃO
+
+atribuição simples:
+
+var a= 5 + 3 == 8;
+var b = a % 5 == 3;
+var c = 5 * b ** 2 == 45; // primeiro faz a potência
+var d = 10 - a/2 == 6; // primeiro faz a divisão
+var e = 6 * 2 / d == 2; // primeiro faz a multiplicação
+var f = b % e + 4 / e == 3; primeiro faz o resto
+
+
+auto-atribuição 
+
+var n = 3;
+
+n = n + 4 == 7; // a var n foi definida como 3
+		   a mesma recebe o valor dela mais 4
+		   e é "reiniciada" como 7
+n+= 4 // o valor da variavel atual mais 4, de outra forma
+
+n = n - 5 ou n-=5;
+n = n * 4 ou n*= 4;
+n = n / 2 ou n/= 2;
+n = n ** 2 ou n**=2;
+n= n % 5 ou n%=5

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Pratica</title>
+    <style>
+        div#gre {
+            font: normal 40pt Arial;
+            color: black;
+            background-color: rgb(17, 107, 226);
+            width: 300px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+        }
+   </style>
+</head>
+
+<body>
+    <div id="gre">
+        Grêmio
+    </div>
+
+    <script>
+
+        var caixa = window.document.getElementById("gre")
+
+        caixa.addEventListener("mouseover", entrar)
+        caixa.addEventListener("mouseout", sair)
+        
+
+        function entrar(){
+            caixa.style.background = 'black'
+            caixa.style.color = "white"
+            caixa.style.lineHeight = '50px'
+            caixa.style.fontSize = '15px'
+            caixa.innerHTML = "• Campeão do Mundo <br> • Tricampeão da América <br> • Penta da Copa do Brasil <br> • Biampeão Brasileiro <br> • Bicampeão da Recopa Sul-americana <br> "
+            
+        }
+
+        function sair(){
+            caixa.style.background = 'rgb(17, 107, 226)'
+            caixa.style.color = "white"
+            
+        }
+
+        
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+Operadores relacionais
+
+5 > 2 → true;
+7 < 4 → false;
+8 >= 8 → true;
+9 <= 7 → false;
+5 == 5 → true;
+4 != 4 → false;
+
+operadores de identidade
+
+5 == 5 → true;
+5 == '5' → true // pro javascript, são valores com a mesma grandeza, apesar de serem de diferente tipo;
+5 === '5' → false // o operador === é um operador de identidade ou operador de igualdade restrita, resolve se os valores são ou não IDENTICOS. 
+também temos o símbolo !== que é um operador de desigualdade restrita. 
+
+OPERADORES LÓGICOS
+
+! negação;
+&& junção;
+|| disjunção;
+
+negação
+! true → false;
+! false → true;
+
+conjunção
+true && true == true;
+true && false == false;
+false && true == false;
+false && false == false;
+
+disjunção
+true && true == true;
+true && false == true;
+false && true == true;
+false && false = false;
+
+quando temos operadores artiméticos, lógicos e relacionais na mesma expressão,
+primeiro são feitos os operadores aritméticos, depois os relacionais e depois os lógicos
+ordem:
+1 - aritméticos;
+2 - relacionais;
+3 - lógicos.
+
+e se na mesma expressão temos um && um || e um !, primeiro o !, depois o && e logo o ||
+
+ordem: 
+1 - !;
+2 - &&;
+3 - ||
+
+ORDEM DE PRECEDÊNCIA:
+
+DENTRO DE UMA EXPRESSÃO, PRIMEIRO SERÃO FEITOS OS OPERADORES ARITMÉTICOS;
+LOGO SERÃO FEITOS OS OPERADORES RELACIONAIS;
+OS OPERADORES LÓGICOS POR ÚLTIMO. DENTRE ESTES, PRIMEIRO O NÃO, DEPOIS A CONJUNÇÃO E POR ÚLTIMO A DISJUNÇÃO
+
+
+OPERADOR TERNÁRIO
+
+Dividido em 3 blocos. Separados por ? e :
+
+TESTE ? TRUE : FALSE
+
+ex.
+var idade = 18;
+
+idade >= 18?'MAIOR': 'MENOR';
+
+
