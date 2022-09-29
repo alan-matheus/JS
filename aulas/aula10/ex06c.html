@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+      <div id="calculo">
+            <h1>Divisão</h1>
+
+            <input type="number" id="n1">
+            <input type="number" id="n2">
+            <input type="button" value="dividir" onclick="dividir()">
+            <div id="res">0</div>
+        </div>
+    </div>
+
+    <script>
+
+        function dividir(){
+            var a = document.getElementById("n1")
+            var b = document.getElementById("n2")
+            var res= document.getElementById("res")
+
+
+            var num1 = Number(a.value)
+            var num2 = Number(b.value)
+
+            var divisao = num1/ num2
+
+            res.innerHTML = `${divisao} `
+
+
+        }
+    </script>
+    
+</body>
+</html>

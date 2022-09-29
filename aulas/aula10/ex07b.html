@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+    <style>
+        #caixa{
+            width: 500px;
+            height: 600px;
+            text-align: center;
+            background-image: linear-gradient(to right, #5acbf8, #01b6e4);
+            line-height: 500px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        Interaja
+    </div>
+
+    <script>
+        var acao = window.document.getElementById("caixa");
+
+        acao.addEventListener("mousemove", mexeu)
+        acao.addEventListener("mouseout", sair)
+
+        function mexeu(){
+            acao.innerHTML = "mexeu"
+        }
+
+        function sair(){
+            acao.innerHTML = "saiu"
+            acao.style.height = "300px"
+            acao.style.width = "200px"
+            acao.style.textAlign = "center"
+            acao.style.lineHeight = "300px"
+        }
+
+
+    </script>
+</body>
+</html>

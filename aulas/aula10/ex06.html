@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Somando Números</title>
-    <style>
-        body{
-            font: normal 18pt Arial;
-        }
-        input{
-            font: normal 18pt Arial;
-            width: 100px;
-
-        }
-
-        #res {
-            margin-top: 20px;
-        }
-    </style>
+   
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado: </div>
+
+    <div id="main">
+        <div id="calculo">
+            <h1>Somando Valores</h1>
+            <input type="number" name="txtn1" id="txtn1"> +
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="somar" onclick="somar()">
+            <div id="res">Resultado: </div>
+        </div>
+    </div>
+    
 
     <script>
         function somar(){

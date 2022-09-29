@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+
+        body{
+            font: normal 1em 'Arial';
+        }
+        
+        #res{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100px;
+            text-align: center;
+        }
+
+        #main{
+            margin: auto;
+            width: 450px;
+            border: 1px solid black;
+            box-shadow: 1px 1px black;
+            border-radius: 10px;
+        }
+
+        #calculo{
+            padding: 15px;
+            
+            
+        }
