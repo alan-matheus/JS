@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <div id="calculo">
+            <h1>Subtração</h1>
+
+            <input type="number" id="n1"/>
+            <input type="number" id="n2"/>
+            <input type="button" value="subtrair" onclick="subtrair()" />
+            <div id="res">0</div>
+        </div>
+
+    </div>
+
+    <script>
+        function subtrair(){
+            var a = document.getElementById("n1")
+            var b = document.getElementById("n2")
+            var res = document.getElementById("res")
+
+            var num1 = Number(a.value)
+            var num2 = Number(b.value)
+
+            var subtrai = num1-num2
+
+            res.innerHTML = `${subtrai}`
+        }
+
+    </script>
+    
+</body>
+</html>

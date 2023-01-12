@@ -52,8 +52,8 @@ ordem:
 
 ORDEM DE PRECEDÊNCIA:
 
-DENTRO DE UMA EXPRESSÃO, PRIMEIRO SERÃO FEITOS OS OPERADORES ARITMÉTICOS;
-LOGO SERÃO FEITOS OS OPERADORES RELACIONAIS;
+DENTRO DE UMA EXPRESSÃO, PRIMEIRO SERÃO FEITOS OS OPERADORES ARITMÉTICOS, onde primeiro vem parentese, depois vem a potência, logo, sucesivamente e da esquerda pra direita, o que aparecer entre divisão, multiplicação e resto, e, por último, soma e subtração;
+LOGO SERÃO FEITOS OS OPERADORES RELACIONAIS (<, >, <=, >=...); e
 OS OPERADORES LÓGICOS POR ÚLTIMO. DENTRE ESTES, PRIMEIRO O NÃO, DEPOIS A CONJUNÇÃO E POR ÚLTIMO A DISJUNÇÃO
 
 

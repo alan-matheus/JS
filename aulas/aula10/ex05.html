@@ -15,6 +15,18 @@
             line-height: 200px;
             text-align: center;
         }
+
+        div#areab {
+            margin-top: 5px;
+            font: normal 20pt Arial;
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+        }
     </style>
 </head>
 <body>
@@ -22,16 +34,25 @@
         interaja...
     </div>
 
+     <div id="areab">
+        vamos lá
+     </div>
+
     <script>
         var a= window.document.getElementById('area')
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
+        var b= document.getElementById('areab')
+        b.addEventListener('click', clicarb)
+        b.addEventListener('mouseenter', entrarb)
+        b.addEventListener('mouseout', sairb)
         
 
         function clicar(){
             a.innerText = "clicou!"
             a.style.background = "blue"
+            
         }
 
         function entrar(){
@@ -43,6 +64,22 @@
             a.innerText = "saiu!"
             a.style.background = "green"
             a.style.color= "white"
+        }
+
+
+        function entrarb(){
+            b.innerText = "entrou!"
+
+        }
+
+        function clicarb(){
+            b.innerText = "clicou!"
+            b.style.background = "yellow"
+        }
+
+        function sairb(){
+            b.style.background = "black"
+            b.innerText = "saiu!"
         }
         
     </script>
