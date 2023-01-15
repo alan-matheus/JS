@@ -6,7 +6,7 @@ function verificar(){
     var res = document.getElementById('res')
    
 
-    if(fano.value.length == 0 || fano.value > ano){
+    if(fano.value.length == 0 || fano.value > ano || fano.value == 0 || fano.value < 1890){
         window.alert('Verifique os dados e tente novamente')
     } else {
 
